@@ -3,24 +3,24 @@ import joblib
 import numpy as np
 
 # 헤드라인
-st.write("#보험료 예측 (아 귀찮아)")
+st.write("# 🤣보험료 예측🤞")
 
 # 첫번째 행
 r1_col1, r1_col2, r1_col3 = st.columns(3)
 
-age = r1_col1.number_input("age", step=1, value=23)
+age = r1_col1.number_input("age🎂", step=1, value=23)
 
-bmi = r1_col2.number_input("bmi", value=34.40)
+bmi = r1_col2.number_input("bmi✔", value=34.40)
 
-children = r1_col3.number_input("children", step=1, value=0)
+children = r1_col3.number_input("children🧑👧", step=1, value=0)
 
 # 두번째 행
 r2_col1, r2_col2, r2_col3 = st.columns(3)
 
-r2_col1.write("smoker")
+r2_col1.write("smoker🚬")
 smoker = r2_col1.checkbox("")
 
-sex_option = ("male", "female")
+sex_option = ("male🤦‍♂️", "female🤦‍♀️")
 sex = r2_col2.selectbox("sex", sex_option)
 is_male = sex_option[0] == sex
 
