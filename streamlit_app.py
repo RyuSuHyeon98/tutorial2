@@ -6,11 +6,6 @@ import numpy as np
 # 헤드라인
 st.write("# 🤣보험료 예측🤞")
 
-df = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [37.56, 127.26],
-    columns=['lat', 'lon'])
-st.map(df)
-
 # 첫번째 행
 r1_col1, r1_col2, r1_col3 = st.columns(3)
 
